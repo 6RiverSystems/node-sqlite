@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "sqlite",
+  "name": "@6river/sqlite",
   "version": "3.0.3",
   "description": "SQLite client for Node.js applications with SQL-based migrations API",
   "repository": "kriasoft/node-sqlite",
@@ -50,7 +50,7 @@
     }
   },
   "dependencies": {
-    "sqlite3": "^4.0.0"
+    "@6river/sqlite3": "^4.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",

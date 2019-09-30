@@ -1,0 +1,23 @@
+# -*- yaml -*-
+version: 2.1
+jobs:
+  publish:
+    docker:
+      - image: circleci/node:10.15.3
+    steps:
+      - checkout
+      - run:
+          name: Setup NPM
+          command: npm config set //registry.npmjs.org/:_authToken "${NPM_TOKEN}"
+      - run:
+          name: Publish
+          command: npm publish --access public
+
+workflows:
+  build_and_release:
+    jobs:
+      - publish:
+          context: 6rs-public-npm
+          filters:
+            branches:
+              only: master
