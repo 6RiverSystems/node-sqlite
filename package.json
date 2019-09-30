@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "@6river/sqlite",
   "version": "3.0.3",
   "description": "SQLite client for Node.js applications with SQL-based migrations API",
